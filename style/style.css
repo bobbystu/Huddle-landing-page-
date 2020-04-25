@@ -1,8 +1,82 @@
+body {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+}
+
+.tryIt-btn {
+    display: block;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px  5px rgb(207, 207, 207);
+    height: 35px;
+    width: 180px;
+}
+
+.getStarted-btn {
+    display: block;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 25px;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    margin: 0;
+    padding: 0;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        background-color: hsl(193, 100%, 96%);
+        background-image: url("../images/bg-hero-mobile.svg");
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        background-color: hsl(193, 100%, 96%);
+        background-image: url("../images/bg-hero-desktop.svg");
+    }
+
+    header .illustration {
+        width: 50%;
+    }
+    
+    section {
+        position: relative;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0 0 10px lightgrey;
+        display: block;
+        margin: 30px 80px;
+        height: 500px
+    }
+
+    section div {
+        width: 50%;
+    }
+
+    section .illustration {
+        position: absolute;
+        height: 80%;
+        right:5%;
+        top: 10%;
+    }
+
+    img[alt="illustration-flowing-conversation"] {
+        left: 5%;
+    }
 }
