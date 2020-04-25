@@ -1,4 +1,5 @@
 body {
+    color: hsl(192, 100%, 9%);
     font-family: 'Poppins', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,21 +9,31 @@ footer {
     background-color: hsl(192, 100%, 9%);
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .tryIt-btn {
     display: block;
     background-color: #FFFFFF;
     border: none;
     border-radius: 25px;
     box-shadow: 0 2px  5px rgb(207, 207, 207);
-    height: 35px;
+    height: 45px;
     width: 180px;
 }
 
 .getStarted-btn {
     display: block;
+    color: #FFFFFF;
     background-color: hsl(322, 100%, 66%);
     border: none;
     border-radius: 25px;
+    box-shadow: 0 2px  5px  hsl(322, 100%, 66%);
+    height: 45px;
+    width: 260px;
+    margin-top: 30px;
 }
 
 .attribution { 
@@ -49,10 +60,50 @@ footer {
     header {
         background-color: hsl(193, 100%, 96%);
         background-image: url("../images/bg-hero-desktop.svg");
+        position: relative;
+        height: 600px;
+    }
+
+    .top-header {
+        display: block;
+        position: relative;
+        height: 100px;
+        width: 100%;
+    }
+
+    .top-header img {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 60px;
+    }
+
+    .top-header button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8em;
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+    }
+
+    .left-header {
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 60px;
+        height: 620px;
+        width: 35%;
     }
 
     header .illustration {
-        width: 50%;
+        position: absolute;
+        right: 60px;
+        top: 150px;
+        height: 400px
+    }
+
+    article {
+        margin-top: 100px;
     }
     
     section {
@@ -66,7 +117,10 @@ footer {
     }
 
     section div {
-        width: 50%;
+        height: 500px;
+        width: 40%;
+        padding-top: 13%;
+        padding-left: 60px;
     }
 
     section .illustration {
@@ -76,7 +130,48 @@ footer {
         top: 10%;
     }
 
+    .second-section div {
+        position: absolute;
+        right: 60px;
+        width: 40%;
+    }
+
     img[alt="illustration-flowing-conversation"] {
         left: 5%;
+    }
+
+    footer {
+        color: #FFFFFF;
+        margin-top: 200px;
+        position: relative;
+        padding-top: 100px;
+    }
+
+    .up-footer {
+        color: hsl(192, 100%, 9%);
+        background-color: #FFFFFF;
+        position: absolute;
+        display: block;
+        width: 50%;
+        height: 270px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px lightgrey;
+        top: -170px;
+        left: 25%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .up-footer h2 {
+        font-size: 2em;
+        margin-top: 60px;
+    }
+
+    .up-footer button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        margin: auto;
+        height: 60px;
+        width: 300px;
     }
 }
