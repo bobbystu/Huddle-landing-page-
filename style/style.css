@@ -1,6 +1,6 @@
 body {
     color: hsl(192, 100%, 9%);
-    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,169 +9,221 @@ footer {
     background-color: hsl(192, 100%, 9%);
 }
 
+h1 , h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
 a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.tryIt-btn {
+header {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("../images/bg-hero-desktop.svg");
+    height: 600px;
+    position: relative;
+}
+
+.top-header {
     display: block;
+    height: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.top-header img {
+    display: block;
+    left: 60px;
+    position: absolute;
+    top: 40px;
+}
+
+.top-header button {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+.left-header {
+    display: inline-block;
+    height: 620px;
+    margin-left: 60px;
+    margin-top: 100px;
+    width: 35%;
+}
+
+header .illustration {
+    height: 400px;
+    position: absolute;
+    right: 60px;
+    top: 150px;
+}
+
+
+.tryIt-btn {
     background-color: #FFFFFF;
     border: none;
     border-radius: 25px;
     box-shadow: 0 2px  5px rgb(207, 207, 207);
+    display: block;
     height: 45px;
     width: 180px;
 }
 
 .getStarted-btn {
-    display: block;
-    color: #FFFFFF;
     background-color: hsl(322, 100%, 66%);
     border: none;
     border-radius: 25px;
     box-shadow: 0 2px  5px  hsl(322, 100%, 66%);
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
     height: 45px;
-    width: 260px;
     margin-top: 30px;
+    width: 260px;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    margin: 0;
-    padding: 0;
+article {
+    margin-top: 100px;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgrey;
+    display: block;
+    height: 500px;
+    margin: 30px 80px;
+    position: relative;
+    
+}
+
+section p {
+    color: hsl(208, 11%, 55%);
+}
+
+section div {
+    height: 500px;
+    padding-left: 60px;
+    padding-top: 13%;
+    width: 40%;
+}
+
+.second-section div {
+    position: absolute;
+    right: 60px;
+    width: 40%;
+}
+
+section img {
+    position: absolute;
+    right:5%;
+    top: 10%;
+    width: 40%;
+}
+
+section img[alt="illustration-flowing-conversation"] {
+    left: 5%;
+}
+
+footer {
+    color: #FFFFFF;
+    margin-top: 200px;
+    padding: 100px 60px 0px 60px;
+    position: relative;
+    
+}
+
+.up-footer {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgrey;
+    color: hsl(192, 100%, 9%);
+    display: block;
+    height: 270px;
+    left: 25%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: -170px;
+    width: 50%;
+}
+
+.up-footer h2 {
+    font-size: 2em;
+    margin-top: 60px;
+}
+
+.up-footer button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin: auto;
+    height: 60px;
+    width: 300px;
+}
+
+img[alt="white-huddle-logo"] {
+    margin-top: 100px;
+    margin-right: 100%;
+}
+
+.link {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.contact-table{
+    height: 100%;
+    width: 300px;
+}
+
+.link-table {
+    width: 300px;
+}
+
+.link-table td {
+    width: 15%;
+}
+
+tr p{
+    margin: 0 0 20px 0;
+}
+
+.social-media-link {
+    
+    width:100px;
+}
+
+.social-link {
+    height: 30px;
+}
+
+.mention {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 11px;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
-    margin: 0;
-    padding: 0;
+    color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 600px) {
     header {
         background-color: hsl(193, 100%, 96%);
         background-image: url("../images/bg-hero-mobile.svg");
-    }
-}
-
-@media (min-width: 600px) {
-    header {
-        background-color: hsl(193, 100%, 96%);
-        background-image: url("../images/bg-hero-desktop.svg");
-        position: relative;
-        height: 600px;
-    }
-
-    .top-header {
-        display: block;
-        position: relative;
-        height: 100px;
-        width: 100%;
-    }
-
-    .top-header img {
-        display: block;
-        position: absolute;
-        top: 40px;
-        left: 60px;
-    }
-
-    .top-header button {
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.8em;
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 60px;
-    }
-
-    .left-header {
-        display: inline-block;
-        margin-top: 100px;
-        margin-left: 60px;
-        height: 620px;
-        width: 35%;
-    }
-
-    header .illustration {
-        position: absolute;
-        right: 60px;
-        top: 150px;
-        height: 400px
-    }
-
-    article {
-        margin-top: 100px;
-    }
-    
-    section {
-        position: relative;
-        background-color: #FFFFFF;
-        border-radius: 10px;
-        box-shadow: 0 0 10px lightgrey;
-        display: block;
-        margin: 30px 80px;
-        height: 500px
-    }
-
-    section div {
-        height: 500px;
-        width: 40%;
-        padding-top: 13%;
-        padding-left: 60px;
-    }
-
-    section .illustration {
-        position: absolute;
-        height: 80%;
-        right:5%;
-        top: 10%;
-    }
-
-    .second-section div {
-        position: absolute;
-        right: 60px;
-        width: 40%;
-    }
-
-    img[alt="illustration-flowing-conversation"] {
-        left: 5%;
-    }
-
-    footer {
-        color: #FFFFFF;
-        margin-top: 200px;
-        position: relative;
-        padding-top: 100px;
-    }
-
-    .up-footer {
-        color: hsl(192, 100%, 9%);
-        background-color: #FFFFFF;
-        position: absolute;
-        display: block;
-        width: 50%;
-        height: 270px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px lightgrey;
-        top: -170px;
-        left: 25%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .up-footer h2 {
-        font-size: 2em;
-        margin-top: 60px;
-    }
-
-    .up-footer button {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1em;
-        margin: auto;
-        height: 60px;
-        width: 300px;
     }
 }
